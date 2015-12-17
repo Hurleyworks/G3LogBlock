@@ -1,0 +1,221 @@
+		g2log created log at: Thu Dec 17 16:41:04 2015
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE:LINE] message		(uuu*: microsecond counter since initialization of log worker)
+
+
+0.000000	DEBUG [HelloG3App.cpp:51 HelloG3App::setup() t20888]	"HelloG3App::setup"
+0.000500	DEBUG [HelloG3App.cpp:119 HelloG3App::resize() t20888]	"HelloG3App::resize"
+0.000500	DEBUG [HelloG3App.cpp:120 HelloG3App::resize() t20888]	"[      640,      480]"
+0.000999	DEBUG [HelloG3App.cpp:121 HelloG3App::resize() t20888]	"[  320.000,  240.000]"
+1.338053	DEBUG [HelloG3App.cpp:61 HelloG3App::mouseDown() t20888]	"HelloG3App::mouseDown"
+1.338053	DEBUG [HelloG3App.cpp:62 HelloG3App::mouseDown() t20888]	"[      185,      114]"
+1.458347	DEBUG [HelloG3App.cpp:73 HelloG3App::mouseUp() t20888]	"HelloG3App::mouseUp"
+1.458347	DEBUG [HelloG3App.cpp:74 HelloG3App::mouseUp() t20888]	"[      185,      114]"
+1.789231	DEBUG [HelloG3App.cpp:61 HelloG3App::mouseDown() t20888]	"HelloG3App::mouseDown"
+1.794202	DEBUG [HelloG3App.cpp:62 HelloG3App::mouseDown() t20888]	"[      235,      116]"
+1.923943	DEBUG [HelloG3App.cpp:73 HelloG3App::mouseUp() t20888]	"HelloG3App::mouseUp"
+1.923943	DEBUG [HelloG3App.cpp:74 HelloG3App::mouseUp() t20888]	"[      235,      116]"
+1.974019	DEBUG [HelloG3App.cpp:61 HelloG3App::mouseDown() t20888]	"HelloG3App::mouseDown"
+1.974019	DEBUG [HelloG3App.cpp:62 HelloG3App::mouseDown() t20888]	"[      235,      116]"
+2.124855	DEBUG [HelloG3App.cpp:73 HelloG3App::mouseUp() t20888]	"HelloG3App::mouseUp"
+2.125856	DEBUG [HelloG3App.cpp:74 HelloG3App::mouseUp() t20888]	"[      235,      116]"
+2.339163	DEBUG [HelloG3App.cpp:61 HelloG3App::mouseDown() t20888]	"HelloG3App::mouseDown"
+2.339163	DEBUG [HelloG3App.cpp:62 HelloG3App::mouseDown() t20888]	"[      235,      116]"
+2.489121	DEBUG [HelloG3App.cpp:73 HelloG3App::mouseUp() t20888]	"HelloG3App::mouseUp"
+2.489121	DEBUG [HelloG3App.cpp:74 HelloG3App::mouseUp() t20888]	"[      235,      116]"
+2.789091	DEBUG [HelloG3App.cpp:61 HelloG3App::mouseDown() t20888]	"HelloG3App::mouseDown"
+2.789091	DEBUG [HelloG3App.cpp:62 HelloG3App::mouseDown() t20888]	"[      235,      116]"
+2.924143	DEBUG [HelloG3App.cpp:73 HelloG3App::mouseUp() t20888]	"HelloG3App::mouseUp"
+2.924143	DEBUG [HelloG3App.cpp:74 HelloG3App::mouseUp() t20888]	"[      235,      116]"
+3.008672	DEBUG [HelloG3App.cpp:61 HelloG3App::mouseDown() t20888]	"HelloG3App::mouseDown"
+3.008672	DEBUG [HelloG3App.cpp:62 HelloG3App::mouseDown() t20888]	"[      235,      116]"
+3.173027	DEBUG [HelloG3App.cpp:73 HelloG3App::mouseUp() t20888]	"HelloG3App::mouseUp"
+3.173027	DEBUG [HelloG3App.cpp:74 HelloG3App::mouseUp() t20888]	"[      235,      116]"
+3.408492	DEBUG [HelloG3App.cpp:61 HelloG3App::mouseDown() t20888]	"HelloG3App::mouseDown"
+3.408492	DEBUG [HelloG3App.cpp:62 HelloG3App::mouseDown() t20888]	"[      235,      116]"
+3.508100	DEBUG [HelloG3App.cpp:73 HelloG3App::mouseUp() t20888]	"HelloG3App::mouseUp"
+3.508100	DEBUG [HelloG3App.cpp:74 HelloG3App::mouseUp() t20888]	"[      235,      116]"
+6.157157	DEBUG [HelloG3App.cpp:79 HelloG3App::keyDown() t20888]	"HelloG3App::keyDown"
+6.157157	INFO [HelloG3App.cpp:103 HelloG3App::keyDown() t20888]	"-----------------Adding 10 new jobs to the thread pool"
+6.157157	INFO [HelloG3App.cpp:135 HelloG3App::task() t21556]	"Hi, I'm doing job: 1"
+6.157157	INFO [HelloG3App.cpp:135 HelloG3App::task() t21632]	"Hi, I'm doing job: 0"
+6.157157	INFO [HelloG3App.cpp:135 HelloG3App::task() t22592]	"Hi, I'm doing job: 2"
+6.157157	INFO [HelloG3App.cpp:135 HelloG3App::task() t3408]	"Hi, I'm doing job: 4"
+6.157157	INFO [HelloG3App.cpp:135 HelloG3App::task() t14436]	"Hi, I'm doing job: 3"
+6.157157	INFO [HelloG3App.cpp:135 HelloG3App::task() t21144]	"Hi, I'm doing job: 5"
+6.157157	INFO [HelloG3App.cpp:135 HelloG3App::task() t18480]	"Hi, I'm doing job: 6"
+6.157157	INFO [HelloG3App.cpp:135 HelloG3App::task() t22252]	"Hi, I'm doing job: 7"
+6.292415	INFO [HelloG3App.cpp:142 HelloG3App::task() t22252]	"Job: 7 took 135.258 ms"
+6.292415	INFO [HelloG3App.cpp:135 HelloG3App::task() t22252]	"Hi, I'm doing job: 8"
+6.302414	DEBUG [HelloG3App.cpp:114 HelloG3App::keyUp() t20888]	"HelloG3App::keyUp"
+6.337933	INFO [HelloG3App.cpp:142 HelloG3App::task() t22592]	"Job: 2 took 180.775 ms"
+6.337933	INFO [HelloG3App.cpp:135 HelloG3App::task() t22592]	"Hi, I'm doing job: 9"
+6.458005	INFO [HelloG3App.cpp:142 HelloG3App::task() t14436]	"Job: 3 took 300.848 ms"
+6.667959	INFO [HelloG3App.cpp:142 HelloG3App::task() t21632]	"Job: 0 took 510.802 ms"
+6.677961	INFO [HelloG3App.cpp:142 HelloG3App::task() t21556]	"Job: 1 took 520.804 ms"
+6.677961	INFO [HelloG3App.cpp:142 HelloG3App::task() t3408]	"Job: 4 took 520.804 ms"
+6.718478	INFO [HelloG3App.cpp:142 HelloG3App::task() t22252]	"Job: 8 took 426.063 ms"
+6.973108	INFO [HelloG3App.cpp:142 HelloG3App::task() t18480]	"Job: 6 took 815.951 ms"
+7.144810	INFO [HelloG3App.cpp:142 HelloG3App::task() t21144]	"Job: 5 took 987.653 ms"
+7.227912	INFO [HelloG3App.cpp:142 HelloG3App::task() t22592]	"Job: 9 took 889.98 ms"
+8.254370	DEBUG [HelloG3App.cpp:79 HelloG3App::keyDown() t20888]	"HelloG3App::keyDown"
+8.254370	INFO [HelloG3App.cpp:103 HelloG3App::keyDown() t20888]	"-----------------Adding 10 new jobs to the thread pool"
+8.254370	INFO [HelloG3App.cpp:135 HelloG3App::task() t21556]	"Hi, I'm doing job: 12"
+8.254370	INFO [HelloG3App.cpp:135 HelloG3App::task() t22592]	"Hi, I'm doing job: 11"
+8.254370	INFO [HelloG3App.cpp:135 HelloG3App::task() t21632]	"Hi, I'm doing job: 13"
+8.254370	INFO [HelloG3App.cpp:135 HelloG3App::task() t3408]	"Hi, I'm doing job: 15"
+8.254370	INFO [HelloG3App.cpp:135 HelloG3App::task() t14436]	"Hi, I'm doing job: 14"
+8.254370	INFO [HelloG3App.cpp:135 HelloG3App::task() t18480]	"Hi, I'm doing job: 10"
+8.254370	INFO [HelloG3App.cpp:135 HelloG3App::task() t22252]	"Hi, I'm doing job: 16"
+8.254370	INFO [HelloG3App.cpp:135 HelloG3App::task() t21144]	"Hi, I'm doing job: 17"
+8.399604	INFO [HelloG3App.cpp:142 HelloG3App::task() t21144]	"Job: 17 took 145.234 ms"
+8.399604	INFO [HelloG3App.cpp:135 HelloG3App::task() t21144]	"Hi, I'm doing job: 18"
+8.404588	INFO [HelloG3App.cpp:142 HelloG3App::task() t21632]	"Job: 13 took 150.218 ms"
+8.404588	INFO [HelloG3App.cpp:135 HelloG3App::task() t21632]	"Hi, I'm doing job: 19"
+8.404588	DEBUG [HelloG3App.cpp:114 HelloG3App::keyUp() t20888]	"HelloG3App::keyUp"
+8.489621	INFO [HelloG3App.cpp:142 HelloG3App::task() t14436]	"Job: 14 took 235.251 ms"
+8.696860	INFO [HelloG3App.cpp:142 HelloG3App::task() t18480]	"Job: 10 took 442.49 ms"
+8.751682	INFO [HelloG3App.cpp:142 HelloG3App::task() t22252]	"Job: 16 took 497.312 ms"
+8.806756	INFO [HelloG3App.cpp:142 HelloG3App::task() t21556]	"Job: 12 took 552.386 ms"
+8.877450	INFO [HelloG3App.cpp:142 HelloG3App::task() t21632]	"Job: 19 took 472.862 ms"
+8.924379	INFO [HelloG3App.cpp:142 HelloG3App::task() t3408]	"Job: 15 took 670.009 ms"
+9.196492	INFO [HelloG3App.cpp:142 HelloG3App::task() t22592]	"Job: 11 took 942.122 ms"
+9.306014	INFO [HelloG3App.cpp:142 HelloG3App::task() t21144]	"Job: 18 took 906.41 ms"
+13.100461	DEBUG [HelloG3App.cpp:79 HelloG3App::keyDown() t20888]	"HelloG3App::keyDown"
+13.100461	CRITICAL [HelloG3App.cpp:94 HelloG3App::keyDown() t20888]	"-------------Yikes!, we're about to dereference a null pointer!!!!"
+13.421196	CRITICAL [Log.cpp:57 Log::onFatalError() t20888]	"Application has crashed!"
+13.421196	CRITICAL [Log.cpp:58 Log::onFatalError() t20888]	"
+2015/12/17 16:41:17.13421196
+
+***** FATAL EXCEPTION RECEIVED ******* 
+"
+***** Vectored Exception Handler: Received fatal exception EXCEPTION_BREAKPOINT	PID: 21584
+
+*******	STACKDUMP *******
+stack dump [0]		e:\code4\g3logblock\samples\framework\log\log.cpp L: 17 <lambda_56f476caaff2c33e4c9095ceb8fc04e9>::operator()
+stack dump [1]		c:\program files (x86)\microsoft visual studio 12.0\vc\include\xrefwrap L: 284 std::_Callable_obj<<lambda_56f476caaff2c33e4c9095ceb8fc04e9>,0>::_ApplyX<void>
+stack dump [2]		c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional L: 229 std::_Func_impl<std::_Callable_obj<<lambda_56f476caaff2c33e4c9095ceb8fc04e9>,0>,std::allocator<std::_Func_class<void> >,void>::_Do_call
+stack dump [3]		c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional L: 316 std::_Func_class<void>::operator()
+stack dump [4]		e:\code4\g3logblock\g3logger\g3log\g3log.cpp L: 172 g2::internal::saveMessage
+stack dump [5]		e:\code4\g3logblock\g3logger\g3log\logcapture.cpp L: 32 LogCapture::~LogCapture
+stack dump [6]		e:\code4\g3logblock\g3logger\g3log\crashhandler_windows.cpp L: 115 `anonymous namespace'::exceptionHandling
+stack dump [7]		e:\code4\g3logblock\g3logger\g3log\crashhandler_windows.cpp L: 138 `anonymous namespace'::vectorExceptionHandling
+stack dump [8]	 MD5Update
+stack dump [9]	 RtlImageNtHeaderEx
+stack dump [10]	 KiUserExceptionDispatcher
+stack dump [11]		e:\code4\g3logblock\samples\hellog3\src\hellog3app.cpp L: 96 HelloG3App::keyDown
+stack dump [12]		e:\code4\cinder\src\cinder\app\window.cpp L: 406 cinder::app::Window::emitKeyDown
+stack dump [13]		e:\code4\cinder\src\cinder\app\msw\appimplmsw.cpp L: 829 cinder::app::WndProc
+stack dump [14]	 DispatchMessageW
+stack dump [15]	 CallWindowProcW
+stack dump [16]	 glDebugEntry
+stack dump [17]	 DispatchMessageW
+stack dump [18]	 DispatchMessageW
+stack dump [19]		e:\code4\cinder\src\cinder\app\msw\appimplmswbasic.cpp L: 142 cinder::app::AppImplMswBasic::sleep
+stack dump [20]		e:\code4\cinder\src\cinder\app\msw\appimplmswbasic.cpp L: 104 cinder::app::AppImplMswBasic::run
+stack dump [21]		e:\code4\cinder\src\cinder\app\msw\appmsw.cpp L: 93 cinder::app::AppMsw::launch
+stack dump [22]		e:\code4\cinder\src\cinder\app\appbase.cpp L: 134 cinder::app::AppBase::executeLaunch
+stack dump [23]		e:\code4\cinder\include\cinder\app\msw\appmsw.h L: 109 cinder::app::AppMsw::main<HelloG3App>
+stack dump [24]		e:\code4\g3logblock\samples\hellog3\src\hellog3app.cpp L: 145 WinMain
+stack dump [25]		f:\dd\vctools\crt\crtw32\startup\crt0.c L: 251 __tmainCRTStartup
+stack dump [26]		f:\dd\vctools\crt\crtw32\startup\crt0.c L: 165 WinMainCRTStartup
+stack dump [27]	 BaseThreadInitThunk
+stack dump [28]	 RtlUserThreadStart
+
+
+
+WARNING
+A recursive crash detected. It is likely the hook set with 'setFatalPreLoggingHook(...)' is responsible
+
+---First crash stacktrace: 
+*******	STACKDUMP *******
+stack dump [0]		e:\code4\g3logblock\samples\hellog3\src\hellog3app.cpp L: 96 HelloG3App::keyDown
+stack dump [1]		e:\code4\cinder\src\cinder\app\window.cpp L: 406 cinder::app::Window::emitKeyDown
+stack dump [2]		e:\code4\cinder\src\cinder\app\msw\appimplmsw.cpp L: 829 cinder::app::WndProc
+stack dump [3]	 DispatchMessageW
+stack dump [4]	 CallWindowProcW
+stack dump [5]	 glDebugEntry
+stack dump [6]	 DispatchMessageW
+stack dump [7]	 DispatchMessageW
+stack dump [8]		e:\code4\cinder\src\cinder\app\msw\appimplmswbasic.cpp L: 142 cinder::app::AppImplMswBasic::sleep
+stack dump [9]		e:\code4\cinder\src\cinder\app\msw\appimplmswbasic.cpp L: 104 cinder::app::AppImplMswBasic::run
+stack dump [10]		e:\code4\cinder\src\cinder\app\msw\appmsw.cpp L: 93 cinder::app::AppMsw::launch
+stack dump [11]		e:\code4\cinder\src\cinder\app\appbase.cpp L: 134 cinder::app::AppBase::executeLaunch
+stack dump [12]		e:\code4\cinder\include\cinder\app\msw\appmsw.h L: 109 cinder::app::AppMsw::main<HelloG3App>
+stack dump [13]		e:\code4\g3logblock\samples\hellog3\src\hellog3app.cpp L: 145 WinMain
+stack dump [14]		f:\dd\vctools\crt\crtw32\startup\crt0.c L: 251 __tmainCRTStartup
+stack dump [15]		f:\dd\vctools\crt\crtw32\startup\crt0.c L: 165 WinMainCRTStartup
+stack dump [16]	 BaseThreadInitThunk
+stack dump [17]	 RtlUserThreadStart
+
+---End of first stacktrace
+""
+2015/12/17 16:41:17.13421196
+
+***** FATAL EXCEPTION RECEIVED ******* 
+"
+***** Vectored Exception Handler: Received fatal exception EXCEPTION_BREAKPOINT	PID: 21584
+
+*******	STACKDUMP *******
+stack dump [0]		e:\code4\g3logblock\samples\framework\log\log.cpp L: 17 <lambda_56f476caaff2c33e4c9095ceb8fc04e9>::operator()
+stack dump [1]		c:\program files (x86)\microsoft visual studio 12.0\vc\include\xrefwrap L: 284 std::_Callable_obj<<lambda_56f476caaff2c33e4c9095ceb8fc04e9>,0>::_ApplyX<void>
+stack dump [2]		c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional L: 229 std::_Func_impl<std::_Callable_obj<<lambda_56f476caaff2c33e4c9095ceb8fc04e9>,0>,std::allocator<std::_Func_class<void> >,void>::_Do_call
+stack dump [3]		c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional L: 316 std::_Func_class<void>::operator()
+stack dump [4]		e:\code4\g3logblock\g3logger\g3log\g3log.cpp L: 172 g2::internal::saveMessage
+stack dump [5]		e:\code4\g3logblock\g3logger\g3log\logcapture.cpp L: 32 LogCapture::~LogCapture
+stack dump [6]		e:\code4\g3logblock\g3logger\g3log\crashhandler_windows.cpp L: 115 `anonymous namespace'::exceptionHandling
+stack dump [7]		e:\code4\g3logblock\g3logger\g3log\crashhandler_windows.cpp L: 138 `anonymous namespace'::vectorExceptionHandling
+stack dump [8]	 MD5Update
+stack dump [9]	 RtlImageNtHeaderEx
+stack dump [10]	 KiUserExceptionDispatcher
+stack dump [11]		e:\code4\g3logblock\samples\hellog3\src\hellog3app.cpp L: 96 HelloG3App::keyDown
+stack dump [12]		e:\code4\cinder\src\cinder\app\window.cpp L: 406 cinder::app::Window::emitKeyDown
+stack dump [13]		e:\code4\cinder\src\cinder\app\msw\appimplmsw.cpp L: 829 cinder::app::WndProc
+stack dump [14]	 DispatchMessageW
+stack dump [15]	 CallWindowProcW
+stack dump [16]	 glDebugEntry
+stack dump [17]	 DispatchMessageW
+stack dump [18]	 DispatchMessageW
+stack dump [19]		e:\code4\cinder\src\cinder\app\msw\appimplmswbasic.cpp L: 142 cinder::app::AppImplMswBasic::sleep
+stack dump [20]		e:\code4\cinder\src\cinder\app\msw\appimplmswbasic.cpp L: 104 cinder::app::AppImplMswBasic::run
+stack dump [21]		e:\code4\cinder\src\cinder\app\msw\appmsw.cpp L: 93 cinder::app::AppMsw::launch
+stack dump [22]		e:\code4\cinder\src\cinder\app\appbase.cpp L: 134 cinder::app::AppBase::executeLaunch
+stack dump [23]		e:\code4\cinder\include\cinder\app\msw\appmsw.h L: 109 cinder::app::AppMsw::main<HelloG3App>
+stack dump [24]		e:\code4\g3logblock\samples\hellog3\src\hellog3app.cpp L: 145 WinMain
+stack dump [25]		f:\dd\vctools\crt\crtw32\startup\crt0.c L: 251 __tmainCRTStartup
+stack dump [26]		f:\dd\vctools\crt\crtw32\startup\crt0.c L: 165 WinMainCRTStartup
+stack dump [27]	 BaseThreadInitThunk
+stack dump [28]	 RtlUserThreadStart
+
+
+
+WARNING
+A recursive crash detected. It is likely the hook set with 'setFatalPreLoggingHook(...)' is responsible
+
+---First crash stacktrace: 
+*******	STACKDUMP *******
+stack dump [0]		e:\code4\g3logblock\samples\hellog3\src\hellog3app.cpp L: 96 HelloG3App::keyDown
+stack dump [1]		e:\code4\cinder\src\cinder\app\window.cpp L: 406 cinder::app::Window::emitKeyDown
+stack dump [2]		e:\code4\cinder\src\cinder\app\msw\appimplmsw.cpp L: 829 cinder::app::WndProc
+stack dump [3]	 DispatchMessageW
+stack dump [4]	 CallWindowProcW
+stack dump [5]	 glDebugEntry
+stack dump [6]	 DispatchMessageW
+stack dump [7]	 DispatchMessageW
+stack dump [8]		e:\code4\cinder\src\cinder\app\msw\appimplmswbasic.cpp L: 142 cinder::app::AppImplMswBasic::sleep
+stack dump [9]		e:\code4\cinder\src\cinder\app\msw\appimplmswbasic.cpp L: 104 cinder::app::AppImplMswBasic::run
+stack dump [10]		e:\code4\cinder\src\cinder\app\msw\appmsw.cpp L: 93 cinder::app::AppMsw::launch
+stack dump [11]		e:\code4\cinder\src\cinder\app\appbase.cpp L: 134 cinder::app::AppBase::executeLaunch
+stack dump [12]		e:\code4\cinder\include\cinder\app\msw\appmsw.h L: 109 cinder::app::AppMsw::main<HelloG3App>
+stack dump [13]		e:\code4\g3logblock\samples\hellog3\src\hellog3app.cpp L: 145 WinMain
+stack dump [14]		f:\dd\vctools\crt\crtw32\startup\crt0.c L: 251 __tmainCRTStartup
+stack dump [15]		f:\dd\vctools\crt\crtw32\startup\crt0.c L: 165 WinMainCRTStartup
+stack dump [16]	 BaseThreadInitThunk
+stack dump [17]	 RtlUserThreadStart
+
+---End of first stacktrace
+
+Exiting after fatal event  (FATAL_EXCEPTION). Fatal type:  EXCEPTION_BREAKPOINT
+Log content flushed flushed sucessfully to sink
+
+"
+g2log g2FileSink shutdown at: 16:41:17
