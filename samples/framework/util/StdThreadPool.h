@@ -8,7 +8,7 @@
 #include <queue>
 #include <future>
 #include <functional>
-#include <utility> // for std::forward
+#include <utility> 
 
 // http://progsch.net/wordpress/
 // https://github.com/progschj/ThreadPool
