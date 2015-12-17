@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\framework">
+      <UniqueIdentifier>{9394d030-e720-47c0-b4f6-b4d907930f4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\framework\g3logger">
+      <UniqueIdentifier>{eed65346-72c7-4d1c-b7d5-df74932bcd0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\framework\gui">
+      <UniqueIdentifier>{43174eed-fd4f-4c31-9161-9beb44a77f0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\framework\util">
+      <UniqueIdentifier>{6eccf676-b935-4f52-8abf-a169f705ab75}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\HelloG3App.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HelloG3App.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\g3logger\g3logger.cpp">
+      <Filter>Source Files\framework\g3logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\framework\gui\ciNanoGui.cpp">
+      <Filter>Source Files\framework\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\framework\log\Log.cpp">
+      <Filter>Source Files\framework\g3logger</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\g3logger\g3logger.h">
+      <Filter>Source Files\framework\g3logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\framework\gui\ciNanoGui.h">
+      <Filter>Source Files\framework\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\framework\log\Log.h">
+      <Filter>Source Files\framework\g3logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\framework\util\StdThreadPool.h">
+      <Filter>Source Files\framework\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
