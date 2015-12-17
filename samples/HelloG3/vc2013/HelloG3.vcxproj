@@ -105,15 +105,19 @@ CHANGE_G3LOG_DEBUG_TO_DBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</P
   <ItemGroup>
     <ClCompile Include="..\..\..\g3logger\g3logger.cpp" />
     <ClCompile Include="..\..\framework\gui\ciNanoGui.cpp" />
-    <ClCompile Include="..\..\framework\log\Log.cpp" />
     <ClCompile Include="..\src\HelloG3App.cpp" />
+    <ClCompile Include="..\src\Log.cpp" />
+    <ClCompile Include="..\src\View.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\g3logger\g3logger.h" />
     <ClInclude Include="..\..\framework\gui\ciNanoGui.h" />
-    <ClInclude Include="..\..\framework\log\Log.h" />
     <ClInclude Include="..\..\framework\util\StdThreadPool.h" />
     <ClInclude Include="..\include\Resources.h" />
+    <ClInclude Include="..\src\HelloG3App.h" />
+    <ClInclude Include="..\src\Log.h" />
+    <ClInclude Include="..\src\Standard.h" />
+    <ClInclude Include="..\src\View.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

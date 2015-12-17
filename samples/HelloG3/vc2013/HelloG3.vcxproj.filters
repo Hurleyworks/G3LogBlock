@@ -42,8 +42,11 @@
     <ClCompile Include="..\..\framework\gui\ciNanoGui.cpp">
       <Filter>Source Files\framework\gui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\framework\log\Log.cpp">
-      <Filter>Source Files\framework\g3logger</Filter>
+    <ClCompile Include="..\src\View.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Log.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -56,11 +59,20 @@
     <ClInclude Include="..\..\framework\gui\ciNanoGui.h">
       <Filter>Source Files\framework\gui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\framework\log\Log.h">
-      <Filter>Source Files\framework\g3logger</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\framework\util\StdThreadPool.h">
       <Filter>Source Files\framework\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\View.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HelloG3App.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Standard.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Log.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

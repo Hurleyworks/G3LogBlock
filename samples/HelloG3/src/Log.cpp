@@ -32,22 +32,22 @@ Log::~Log ()
 
 void Log::ReverseToOriginalFatalHandling()
 {
-#if !(defined(DISABLE_FATAL_SIGNALHANDLING))
-	if (SIG_ERR == signal(SIGABRT, SIG_DFL))
-		perror("signal - SIGABRT");
+	#if !(defined(DISABLE_FATAL_SIGNALHANDLING))
+		if (SIG_ERR == signal(SIGABRT, SIG_DFL))
+			perror("signal - SIGABRT");
 
-	if (SIG_ERR == signal(SIGFPE, SIG_DFL))
-		perror("signal - SIGABRT");
+		if (SIG_ERR == signal(SIGFPE, SIG_DFL))
+			perror("signal - SIGABRT");
 
-	if (SIG_ERR == signal(SIGSEGV, SIG_DFL))
-		perror("signal - SIGABRT");
+		if (SIG_ERR == signal(SIGSEGV, SIG_DFL))
+			perror("signal - SIGABRT");
 
-	if (SIG_ERR == signal(SIGILL, SIG_DFL))
-		perror("signal - SIGABRT");
+		if (SIG_ERR == signal(SIGILL, SIG_DFL))
+			perror("signal - SIGABRT");
 
-	if (SIG_ERR == signal(SIGTERM, SIG_DFL))
-		perror("signal - SIGABRT");
-#endif
+		if (SIG_ERR == signal(SIGTERM, SIG_DFL))
+			perror("signal - SIGABRT");
+	#endif
 }
 
 void Log::onFatalError(g2::FatalMessagePtr fatal_message)
@@ -55,7 +55,6 @@ void Log::onFatalError(g2::FatalMessagePtr fatal_message)
 	ReverseToOriginalFatalHandling();
 
 	LOG(CRITICAL) << "Application has crashed!";
-	LOG(CRITICAL) << fatal_message.get()->toString();
 
 	// now ready to exit, instead of reinventing the wheel we do it the g3log way
 	g2::internal::pushFatalMessageToLogger(fatal_message);

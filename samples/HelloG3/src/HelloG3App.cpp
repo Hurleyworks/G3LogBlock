@@ -1,77 +1,55 @@
-#include "cinder/app/App.h"
-#include "cinder/app/RendererGl.h"
-#include "cinder/gl/gl.h"
-#include "cinder/Rand.h"
-
-#include "../../framework/log/Log.h"
-#include "../../framework/util/StdThreadPool.h"
-
-using namespace ci;
-using namespace ci::app;
-using namespace std;
-
-
-class HelloG3App : public App 
-{
-  public:
-	  HelloG3App()
-		 : pool(std::thread::hardware_concurrency())
-	  {}
-	  void setup() override;
-	  void resize() override;
-	  void update() override;
-	  void draw() override;
-
-	  void mouseMove(MouseEvent event) override;
-	  void mouseDown(MouseEvent event) override;
-	  void mouseDrag(MouseEvent event) override;
-	  void mouseUp(MouseEvent event) override;
-
-	  void keyDown(KeyEvent event) override;
-	  void keyUp(KeyEvent event) override;
-	 
- private:
-	LogRef log;
-	StdThreadPool pool;
-	static Rand rand;
-	int jobNumber = 0;
-
-	static void task(const int jobNumber);
-};
+#include "HelloG3App.h"
 
 Rand HelloG3App::rand;
 
 void HelloG3App::setup()
 {
-	Rand::randomize();
+	try
+	{
+		Rand::randomize();
+		gui = std::make_shared<View>();
+		gui->create(getWindow(), this);
 
-	fs::path p = getAssetPath("logs");
-	log = std::make_shared<Log>(p.generic_string(), "HelloG3App");
+		fs::path p = getAssetPath("logs");
+		log = std::make_shared<Log>(p.generic_string(), "HelloG3App");
+	}
+	catch (std::exception & e)
+	{
+		gui->postWarningMessage("Fatal Error", e.what());
+		ok = false;
+		return;
+	}
 
 	LOG(DBUG) << __FUNCTION__;
 }
 
 void HelloG3App::mouseMove(MouseEvent event)
 {
-
+	gui->mouseMove(event);
 }
 
 void HelloG3App::mouseDown(MouseEvent event)
 {
 	LOG(DBUG) << __FUNCTION__;
 	LOG(DBUG) << event.getPos();
+
+	gui->mouseDown(event);
 }
 
 void HelloG3App::mouseDrag(MouseEvent event)
 {
 	LOG(DBUG) << __FUNCTION__;
 	LOG(DBUG) << event.getPos();
+
+	gui->mouseDrag(event);;
 }
 
 void HelloG3App::mouseUp(MouseEvent event)
 {
 	LOG(DBUG) << __FUNCTION__;
 	LOG(DBUG) << event.getPos();
+
+	gui->mouseUp(event);
 }
 
 void HelloG3App::keyDown(KeyEvent event)
@@ -90,19 +68,13 @@ void HelloG3App::keyDown(KeyEvent event)
 
 		case KeyEvent::KEY_c:
 		{
-			// crash!
-			LOG(CRITICAL) << "-------------Yikes!, we're about to dereference a null pointer!!!!";
-			int * const ptr = nullptr;
-			*ptr = 42;
+			
 			break;
 		}
 
 		case KeyEvent::KEY_j:
 		{
-			// add 10 jobs to the pool
-			LOG(INFO) << "-----------------Adding 10 new jobs to the thread pool";
-			for (int i = 0; i < 10; i++)
-				pool.enqueue(&HelloG3App::task, jobNumber++);
+			
 
 			break;
 		}
@@ -127,7 +99,42 @@ void HelloG3App::update()
 
 void HelloG3App::draw()
 {
-	gl::clear( Color( 0, 0, 0 ) ); 
+	if (!ok) return;
+
+	// performance data
+	double t, dt;
+	t = getElapsedSeconds();
+	dt = t - prevt;
+	prevt = t;
+
+	gl::clear(bgColor);
+
+	gui->draw(getElapsedSeconds());
+
+	// Measure the CPU time taken excluding swap buffers (as the swap may wait for GPU)
+	cpuTime = getElapsedSeconds() - t;
+	gui->updatePerfGraph((float)dt, (float)cpuTime);
+}
+
+void HelloG3App::crashByNullPointer()
+{
+	LOG(CRITICAL) << "-------------About to dereference a null pointer!!!!";
+	int * const ptr = nullptr;
+	*ptr = 42;
+}
+
+void HelloG3App::raiseSIGABRT()
+{
+	
+	raise(SIGABRT);
+}
+
+void HelloG3App::spawnNewJobs(int count)
+{
+	// add jobs to the pool
+	LOG(INFO) << "-----------------Adding " << count << " new jobs to the thread pool";
+	for (int i = 0; i < count; i++)
+		pool.enqueue(&HelloG3App::task, jobNumber++);
 }
 
 void HelloG3App::task(const int jobNumber)
@@ -142,4 +149,12 @@ void HelloG3App::task(const int jobNumber)
 	LOG(INFO) << "Job: " << jobNumber << " took " << elapsed.count() << " ms";
 }
 
-CINDER_APP( HelloG3App, RendererGl )
+CINDER_APP(HelloG3App, RendererGl(RendererGl::Options().stencil().msaa(16)),
+	[&](App::Settings * settings)
+{
+	settings->setWindowSize(appWidth, appHeight);
+	settings->setFrameRate(60.0f);
+	settings->setHighDensityDisplayEnabled();
+	settings->setTitle(getTitle());
+
+})
