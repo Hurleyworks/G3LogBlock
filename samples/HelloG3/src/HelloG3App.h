@@ -35,6 +35,7 @@ public:
 	void spawnNewJobs(int count);
 	void crashByNullPointer();
 	void raiseSIGABRT();
+	void logFrames(bool state) { frameLogging = state; }
 
 private:
 	ViewRef gui;
@@ -43,6 +44,11 @@ private:
 	int jobNumber = 0;
 	bool ok = true;
 	Color bgColor = Color(0.1f, 0.11f, 0.12f);
+
+	// performance
+	double prevt = 0;
+	double cpuTime = 0;
+	bool frameLogging = false;
 
 	static Rand rand;
 	static void task(const int jobNumber);

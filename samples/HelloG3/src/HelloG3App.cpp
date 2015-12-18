@@ -77,16 +77,30 @@ void HelloG3App::resize()
 }
 void HelloG3App::update()
 {
-	
+	if (frameLogging)
+		LOG(DBUG) << __FUNCTION__;
 }
 
 void HelloG3App::draw()
 {
 	if (!ok) return;
 
+	if (frameLogging)
+		LOG(DBUG) << __FUNCTION__;
+
+	// performance data
+	double t, dt;
+	t = getElapsedSeconds();
+	dt = t - prevt;
+	prevt = t;
+
 	gl::clear(bgColor);
 
 	gui->draw(getElapsedSeconds());
+
+	// Measure the CPU time taken excluding swap buffers (as the swap may wait for GPU)
+	cpuTime = getElapsedSeconds() - t;
+	gui->updatePerfGraph((float)dt, (float)cpuTime);
 }
 
 void HelloG3App::crashByNullPointer()

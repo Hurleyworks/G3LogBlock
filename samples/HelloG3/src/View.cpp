@@ -44,6 +44,11 @@ void View::create(WindowRef & ciWindow, HelloG3App * const app)
 		b = new Button(window, "SIGABRT");
 		b->setCallback([&] {this->app->raiseSIGABRT(); });
 
+		new Label(window, "Performance test", "sans-bold");
+		b = new Button(window, "Log draw() and update()");
+		b->setFlags(Button::ToggleButton);
+		b->setChangeCallback([&](bool state) { this->app->logFrames(state);});
+
 		performLayout(mNVGContext);
 	}
 	catch (const std::exception & e)
@@ -55,6 +60,11 @@ void View::create(WindowRef & ciWindow, HelloG3App * const app)
 void View::draw(double time)
 {
 	drawWidgets();
+
+	float x = 5;
+	float y = mSize[1] - 40;
+	renderGraph(mNVGContext, x, y, &fps, nvgRGBA(128, 0, 0, 255));
+	renderGraph(mNVGContext, x + 200 + 5, y, &cpuGraph, nvgRGBA(0, 128, 0, 255));
 }
 
 bool View::mouseMove(MouseEvent e)
