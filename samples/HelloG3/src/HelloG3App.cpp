@@ -30,7 +30,6 @@ void HelloG3App::mouseMove(MouseEvent event)
 
 void HelloG3App::mouseDown(MouseEvent event)
 {
-	LOG(DBUG) << __FUNCTION__;
 	LOG(DBUG) << event.getPos();
 
 	gui->mouseDown(event);
@@ -38,7 +37,6 @@ void HelloG3App::mouseDown(MouseEvent event)
 
 void HelloG3App::mouseDrag(MouseEvent event)
 {
-	LOG(DBUG) << __FUNCTION__;
 	LOG(DBUG) << event.getPos();
 
 	gui->mouseDrag(event);;
@@ -46,7 +44,6 @@ void HelloG3App::mouseDrag(MouseEvent event)
 
 void HelloG3App::mouseUp(MouseEvent event)
 {
-	LOG(DBUG) << __FUNCTION__;
 	LOG(DBUG) << event.getPos();
 
 	gui->mouseUp(event);
@@ -75,7 +72,6 @@ void HelloG3App::keyUp(KeyEvent event)
 
 void HelloG3App::resize()
 {
-	LOG(DBUG) << __FUNCTION__;
 	LOG(DBUG) << getWindowSize();
 	LOG(DBUG) << getWindowCenter();
 }
