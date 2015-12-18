@@ -55,10 +55,6 @@ void View::create(WindowRef & ciWindow, HelloG3App * const app)
 void View::draw(double time)
 {
 	drawWidgets();
-	float x = 5;
-	float y = (float)mSize[1] - 40.0f;
-	renderGraph(mNVGContext, x, y, &fps, nvgRGBA(128, 0, 0, 255));
-	renderGraph(mNVGContext, x + 200 + 5, y, &cpuGraph, nvgRGBA(0, 128, 0, 255));
 }
 
 bool View::mouseMove(MouseEvent e)

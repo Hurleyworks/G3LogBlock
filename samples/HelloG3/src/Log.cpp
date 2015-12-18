@@ -9,7 +9,6 @@ Log::Log(const std::string & logFolder, const std::string & appName)
 	:logFolder(logFolder),
 	 logger(g2::LogWorker::createWithDefaultLogger(appName, logFolder))
 {	
-
 	g2::initializeLogging(logger.worker.get());
 	g2::setFatalExitHandler(&Log::onFatalError);
 
@@ -53,8 +52,8 @@ void Log::ReverseToOriginalFatalHandling()
 void Log::onFatalError(g2::FatalMessagePtr fatal_message)
 {
 	ReverseToOriginalFatalHandling();
-
-	LOG(CRITICAL) << "Application has crashed!";
+	
+	// maybe save your work here
 
 	// now ready to exit, instead of reinventing the wheel we do it the g3log way
 	g2::internal::pushFatalMessageToLogger(fatal_message);

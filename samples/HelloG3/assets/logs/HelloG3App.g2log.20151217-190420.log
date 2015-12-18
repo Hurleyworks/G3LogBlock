@@ -1,0 +1,267 @@
+		g2log created log at: Thu Dec 17 19:04:20 2015
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE:LINE] message		(uuu*: microsecond counter since initialization of log worker)
+
+
+0.000000	DEBUG [HelloG3App.cpp:23 HelloG3App::setup() t20396]	"HelloG3App::setup"
+0.000000	DEBUG [HelloG3App.cpp:78 HelloG3App::resize() t20396]	"HelloG3App::resize"
+0.000000	DEBUG [HelloG3App.cpp:79 HelloG3App::resize() t20396]	"[      970,      600]"
+0.000000	DEBUG [HelloG3App.cpp:80 HelloG3App::resize() t20396]	"[  485.000,  300.000]"
+1.976304	DEBUG [HelloG3App.cpp:33 HelloG3App::mouseDown() t20396]	"HelloG3App::mouseDown"
+1.976304	DEBUG [HelloG3App.cpp:34 HelloG3App::mouseDown() t20396]	"[      511,      344]"
+2.091164	DEBUG [HelloG3App.cpp:49 HelloG3App::mouseUp() t20396]	"HelloG3App::mouseUp"
+2.091164	DEBUG [HelloG3App.cpp:50 HelloG3App::mouseUp() t20396]	"[      511,      344]"
+2.091164	INFO [HelloG3App.cpp:112 HelloG3App::spawnNewJobs() t20396]	"-----------------Adding 12 new jobs to the thread pool"
+2.091164	INFO [HelloG3App.cpp:119 HelloG3App::task() t20656]	"Hi, I'm doing job: 1"
+2.091164	INFO [HelloG3App.cpp:119 HelloG3App::task() t2740]	"Hi, I'm doing job: 2"
+2.091164	INFO [HelloG3App.cpp:119 HelloG3App::task() t24072]	"Hi, I'm doing job: 0"
+2.091164	INFO [HelloG3App.cpp:119 HelloG3App::task() t20756]	"Hi, I'm doing job: 4"
+2.091164	INFO [HelloG3App.cpp:119 HelloG3App::task() t14504]	"Hi, I'm doing job: 3"
+2.091164	INFO [HelloG3App.cpp:119 HelloG3App::task() t4416]	"Hi, I'm doing job: 5"
+2.091164	INFO [HelloG3App.cpp:119 HelloG3App::task() t21924]	"Hi, I'm doing job: 7"
+2.091164	INFO [HelloG3App.cpp:119 HelloG3App::task() t3720]	"Hi, I'm doing job: 6"
+2.192364	DEBUG [HelloG3App.cpp:33 HelloG3App::mouseDown() t20396]	"HelloG3App::mouseDown"
+2.192364	DEBUG [HelloG3App.cpp:34 HelloG3App::mouseDown() t20396]	"[      511,      344]"
+2.231022	INFO [HelloG3App.cpp:126 HelloG3App::task() t21924]	"Job: 7 took 139.858 ms"
+2.231022	INFO [HelloG3App.cpp:119 HelloG3App::task() t21924]	"Hi, I'm doing job: 8"
+2.271328	INFO [HelloG3App.cpp:126 HelloG3App::task() t20756]	"Job: 4 took 180.164 ms"
+2.271328	INFO [HelloG3App.cpp:119 HelloG3App::task() t20756]	"Hi, I'm doing job: 9"
+2.391928	INFO [HelloG3App.cpp:126 HelloG3App::task() t14504]	"Job: 3 took 300.764 ms"
+2.391928	INFO [HelloG3App.cpp:119 HelloG3App::task() t14504]	"Hi, I'm doing job: 10"
+2.391928	DEBUG [HelloG3App.cpp:49 HelloG3App::mouseUp() t20396]	"HelloG3App::mouseUp"
+2.391928	DEBUG [HelloG3App.cpp:50 HelloG3App::mouseUp() t20396]	"[      511,      344]"
+2.391928	INFO [HelloG3App.cpp:112 HelloG3App::spawnNewJobs() t20396]	"-----------------Adding 12 new jobs to the thread pool"
+2.603007	INFO [HelloG3App.cpp:126 HelloG3App::task() t2740]	"Job: 2 took 511.843 ms"
+2.603007	INFO [HelloG3App.cpp:119 HelloG3App::task() t2740]	"Hi, I'm doing job: 11"
+2.613051	INFO [HelloG3App.cpp:126 HelloG3App::task() t20656]	"Job: 1 took 521.887 ms"
+2.613051	INFO [HelloG3App.cpp:126 HelloG3App::task() t24072]	"Job: 0 took 521.887 ms"
+2.613051	INFO [HelloG3App.cpp:119 HelloG3App::task() t20656]	"Hi, I'm doing job: 12"
+2.613051	INFO [HelloG3App.cpp:119 HelloG3App::task() t24072]	"Hi, I'm doing job: 13"
+2.657985	INFO [HelloG3App.cpp:126 HelloG3App::task() t21924]	"Job: 8 took 426.963 ms"
+2.657985	INFO [HelloG3App.cpp:119 HelloG3App::task() t21924]	"Hi, I'm doing job: 14"
+2.749014	INFO [HelloG3App.cpp:126 HelloG3App::task() t2740]	"Job: 11 took 146.007 ms"
+2.749014	INFO [HelloG3App.cpp:119 HelloG3App::task() t2740]	"Hi, I'm doing job: 15"
+2.848336	INFO [HelloG3App.cpp:126 HelloG3App::task() t24072]	"Job: 13 took 235.285 ms"
+2.848336	INFO [HelloG3App.cpp:119 HelloG3App::task() t24072]	"Hi, I'm doing job: 16"
+2.909836	INFO [HelloG3App.cpp:126 HelloG3App::task() t3720]	"Job: 6 took 818.672 ms"
+2.909836	INFO [HelloG3App.cpp:119 HelloG3App::task() t3720]	"Hi, I'm doing job: 17"
+2.944843	INFO [HelloG3App.cpp:126 HelloG3App::task() t14504]	"Job: 10 took 552.915 ms"
+2.944843	INFO [HelloG3App.cpp:119 HelloG3App::task() t14504]	"Hi, I'm doing job: 18"
+3.053894	INFO [HelloG3App.cpp:126 HelloG3App::task() t3720]	"Job: 17 took 144.058 ms"
+3.053894	INFO [HelloG3App.cpp:119 HelloG3App::task() t3720]	"Hi, I'm doing job: 19"
+3.081905	INFO [HelloG3App.cpp:126 HelloG3App::task() t4416]	"Job: 5 took 990.741 ms"
+3.081905	INFO [HelloG3App.cpp:119 HelloG3App::task() t4416]	"Hi, I'm doing job: 20"
+3.159927	INFO [HelloG3App.cpp:126 HelloG3App::task() t20756]	"Job: 9 took 888.6 ms"
+3.159927	INFO [HelloG3App.cpp:119 HelloG3App::task() t20756]	"Hi, I'm doing job: 21"
+3.188155	INFO [HelloG3App.cpp:126 HelloG3App::task() t2740]	"Job: 15 took 439.141 ms"
+3.188155	INFO [HelloG3App.cpp:119 HelloG3App::task() t2740]	"Hi, I'm doing job: 22"
+3.292154	DEBUG [HelloG3App.cpp:33 HelloG3App::mouseDown() t20396]	"HelloG3App::mouseDown"
+3.292154	DEBUG [HelloG3App.cpp:34 HelloG3App::mouseDown() t20396]	"[      523,      308]"
+3.330254	INFO [HelloG3App.cpp:126 HelloG3App::task() t21924]	"Job: 14 took 672.269 ms"
+3.330254	INFO [HelloG3App.cpp:119 HelloG3App::task() t21924]	"Hi, I'm doing job: 23"
+3.345204	INFO [HelloG3App.cpp:126 HelloG3App::task() t24072]	"Job: 16 took 496.868 ms"
+3.392096	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.392096	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      523,      306]"
+3.392096	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.392096	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      524,      303]"
+3.407098	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.407098	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      524,      302]"
+3.407098	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.407098	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      301]"
+3.422101	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.422101	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      300]"
+3.422101	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.422101	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      298]"
+3.437103	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.442105	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      296]"
+3.442105	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.442105	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      294]"
+3.456946	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.456946	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      291]"
+3.456946	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.456946	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      289]"
+3.461964	INFO [HelloG3App.cpp:126 HelloG3App::task() t21924]	"Job: 23 took 131.711 ms"
+3.471962	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.471962	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      286]"
+3.471962	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.471962	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      279]"
+3.491970	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.491970	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      526,      276]"
+3.491970	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.491970	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      526,      272]"
+3.506969	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.506969	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      526,      268]"
+3.506969	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.506969	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      526,      265]"
+3.516975	INFO [HelloG3App.cpp:126 HelloG3App::task() t2740]	"Job: 22 took 328.82 ms"
+3.521971	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.521971	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      526,      258]"
+3.521971	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.521971	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      526,      252]"
+3.526960	INFO [HelloG3App.cpp:126 HelloG3App::task() t3720]	"Job: 19 took 473.067 ms"
+3.536975	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.542001	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      526,      247]"
+3.542001	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.542518	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      241]"
+3.552448	INFO [HelloG3App.cpp:126 HelloG3App::task() t20656]	"Job: 12 took 939.397 ms"
+3.556451	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.556451	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      236]"
+3.556451	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.556451	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      230]"
+3.571682	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.571682	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      226]"
+3.571682	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.571682	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      218]"
+3.591687	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.591687	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      216]"
+3.591687	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.591687	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      213]"
+3.606690	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.606690	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      212]"
+3.606690	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.606690	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      207]"
+3.621692	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.621692	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      524,      201]"
+3.621692	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.621692	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      524,      194]"
+3.641875	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.641875	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      524,      188]"
+3.642346	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.642346	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      524,      181]"
+3.657963	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.657963	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      524,      178]"
+3.658969	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.658969	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      524,      173]"
+3.671515	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.671515	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      170]"
+3.671515	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.671515	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      167]"
+3.691737	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.691737	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      164]"
+3.691737	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.691737	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      163]"
+3.706522	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.706522	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      160]"
+3.706522	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.706522	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      159]"
+3.721524	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.721524	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      525,      157]"
+3.721524	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.721524	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      524,      153]"
+3.741553	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.741553	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      524,      151]"
+3.742055	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.742055	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      523,      150]"
+3.749340	INFO [HelloG3App.cpp:126 HelloG3App::task() t20756]	"Job: 21 took 589.413 ms"
+3.756845	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.756845	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      523,      149]"
+3.756845	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.756845	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      523,      148]"
+3.773456	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.773456	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      523,      146]"
+3.788459	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.788459	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      523,      145]"
+3.803466	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.808450	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      523,      144]"
+3.823466	DEBUG [HelloG3App.cpp:41 HelloG3App::mouseDrag() t20396]	"HelloG3App::mouseDrag"
+3.823466	DEBUG [HelloG3App.cpp:42 HelloG3App::mouseDrag() t20396]	"[      523,      143]"
+3.847292	INFO [HelloG3App.cpp:126 HelloG3App::task() t14504]	"Job: 18 took 902.449 ms"
+3.856732	DEBUG [HelloG3App.cpp:49 HelloG3App::mouseUp() t20396]	"HelloG3App::mouseUp"
+3.856732	DEBUG [HelloG3App.cpp:50 HelloG3App::mouseUp() t20396]	"[      523,      143]"
+3.996637	INFO [HelloG3App.cpp:126 HelloG3App::task() t4416]	"Job: 20 took 914.732 ms"
+4.708198	DEBUG [HelloG3App.cpp:33 HelloG3App::mouseDown() t20396]	"HelloG3App::mouseDown"
+4.708198	DEBUG [HelloG3App.cpp:34 HelloG3App::mouseDown() t20396]	"[      517,      216]"
+4.872659	DEBUG [HelloG3App.cpp:49 HelloG3App::mouseUp() t20396]	"HelloG3App::mouseUp"
+4.872659	DEBUG [HelloG3App.cpp:50 HelloG3App::mouseUp() t20396]	"[      517,      216]"
+4.872659	CRITICAL [HelloG3App.cpp:98 HelloG3App::crashByNullPointer() t20396]	"-------------About to dereference a null pointer!!!!"
+2015/12/17 19:04:25.5152318
+
+***** FATAL EXCEPTION RECEIVED ******* 
+"
+***** Vectored Exception Handler: Received fatal exception EXCEPTION_BREAKPOINT	PID: 20664
+
+*******	STACKDUMP *******
+stack dump [0]		e:\code4\g3logblock\samples\hellog3\src\log.cpp L: 16 <lambda_5e456ebeeab5dea14b20c4e5f90cb0ab>::operator()
+stack dump [1]		c:\program files (x86)\microsoft visual studio 12.0\vc\include\xrefwrap L: 284 std::_Callable_obj<<lambda_5e456ebeeab5dea14b20c4e5f90cb0ab>,0>::_ApplyX<void>
+stack dump [2]		c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional L: 229 std::_Func_impl<std::_Callable_obj<<lambda_5e456ebeeab5dea14b20c4e5f90cb0ab>,0>,std::allocator<std::_Func_class<void> >,void>::_Do_call
+stack dump [3]		c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional L: 316 std::_Func_class<void>::operator()
+stack dump [4]		e:\code4\g3logblock\g3logger\g3log\g3log.cpp L: 172 g2::internal::saveMessage
+stack dump [5]		e:\code4\g3logblock\g3logger\g3log\logcapture.cpp L: 32 LogCapture::~LogCapture
+stack dump [6]		e:\code4\g3logblock\g3logger\g3log\crashhandler_windows.cpp L: 115 `anonymous namespace'::exceptionHandling
+stack dump [7]		e:\code4\g3logblock\g3logger\g3log\crashhandler_windows.cpp L: 138 `anonymous namespace'::vectorExceptionHandling
+stack dump [8]	 MD5Update
+stack dump [9]	 RtlImageNtHeaderEx
+stack dump [10]	 KiUserExceptionDispatcher
+stack dump [11]		e:\code4\g3logblock\samples\hellog3\src\hellog3app.cpp L: 100 HelloG3App::crashByNullPointer
+stack dump [12]		e:\code4\g3logblock\samples\hellog3\src\view.cpp L: 42 <lambda_506f4fab56a8f89b4a04a6d8a4202808>::operator()
+stack dump [13]		c:\program files (x86)\microsoft visual studio 12.0\vc\include\xrefwrap L: 284 std::_Callable_obj<<lambda_506f4fab56a8f89b4a04a6d8a4202808>,0>::_ApplyX<void>
+stack dump [14]		c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional L: 229 std::_Func_impl<std::_Callable_obj<<lambda_506f4fab56a8f89b4a04a6d8a4202808>,0>,std::allocator<std::_Func_class<void> >,void>::_Do_call
+stack dump [15]		c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional L: 316 std::_Func_class<void>::operator()
+stack dump [16]		e:\code4\g3logblock\samples\framework\gui\nanoguimodule\nanogui\button.cpp L: 105 nanogui::Button::mouseButtonEvent
+stack dump [17]		e:\code4\g3logblock\samples\framework\gui\nanoguimodule\nanogui\widget.cpp L: 93 nanogui::Widget::mouseButtonEvent
+stack dump [18]		e:\code4\g3logblock\samples\framework\gui\nanoguimodule\nanogui\window.cpp L: 120 nanogui::Window::mouseButtonEvent
+stack dump [19]		e:\code4\g3logblock\samples\framework\gui\nanoguimodule\nanogui\widget.cpp L: 93 nanogui::Widget::mouseButtonEvent
+stack dump [20]		e:\code4\g3logblock\samples\framework\gui\nanoguimodule\nanogui\screen.cpp L: 130 nanogui::Screen::mouseButtonCallbackEvent
+stack dump [21]		e:\code4\g3logblock\samples\hellog3\src\view.cpp L: 80 View::mouseUp
+stack dump [22]		e:\code4\g3logblock\samples\hellog3\src\hellog3app.cpp L: 52 HelloG3App::mouseUp
+stack dump [23]		e:\code4\cinder\src\cinder\app\window.cpp L: 332 cinder::app::Window::emitMouseUp
+stack dump [24]		e:\code4\cinder\src\cinder\app\msw\appimplmsw.cpp L: 873 cinder::app::WndProc
+stack dump [25]	 DispatchMessageW
+stack dump [26]	 CallWindowProcW
+stack dump [27]	 glDebugEntry
+stack dump [28]	 DispatchMessageW
+stack dump [29]	 DispatchMessageW
+stack dump [30]		e:\code4\cinder\src\cinder\app\msw\appimplmswbasic.cpp L: 142 cinder::app::AppImplMswBasic::sleep
+stack dump [31]		e:\code4\cinder\src\cinder\app\msw\appimplmswbasic.cpp L: 104 cinder::app::AppImplMswBasic::run
+stack dump [32]		e:\code4\cinder\src\cinder\app\msw\appmsw.cpp L: 93 cinder::app::AppMsw::launch
+stack dump [33]		e:\code4\cinder\src\cinder\app\appbase.cpp L: 134 cinder::app::AppBase::executeLaunch
+stack dump [34]		e:\code4\cinder\include\cinder\app\msw\appmsw.h L: 109 cinder::app::AppMsw::main<HelloG3App>
+stack dump [35]		e:\code4\g3logblock\samples\hellog3\src\hellog3app.cpp L: 136 WinMain
+stack dump [36]		f:\dd\vctools\crt\crtw32\startup\crt0.c L: 251 __tmainCRTStartup
+stack dump [37]		f:\dd\vctools\crt\crtw32\startup\crt0.c L: 165 WinMainCRTStartup
+stack dump [38]	 BaseThreadInitThunk
+stack dump [39]	 RtlUserThreadStart
+
+
+
+WARNING
+A recursive crash detected. It is likely the hook set with 'setFatalPreLoggingHook(...)' is responsible
+
+---First crash stacktrace: 
+*******	STACKDUMP *******
+stack dump [0]		e:\code4\g3logblock\samples\hellog3\src\hellog3app.cpp L: 100 HelloG3App::crashByNullPointer
+stack dump [1]		e:\code4\g3logblock\samples\hellog3\src\view.cpp L: 42 <lambda_506f4fab56a8f89b4a04a6d8a4202808>::operator()
+stack dump [2]		c:\program files (x86)\microsoft visual studio 12.0\vc\include\xrefwrap L: 284 std::_Callable_obj<<lambda_506f4fab56a8f89b4a04a6d8a4202808>,0>::_ApplyX<void>
+stack dump [3]		c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional L: 229 std::_Func_impl<std::_Callable_obj<<lambda_506f4fab56a8f89b4a04a6d8a4202808>,0>,std::allocator<std::_Func_class<void> >,void>::_Do_call
+stack dump [4]		c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional L: 316 std::_Func_class<void>::operator()
+stack dump [5]		e:\code4\g3logblock\samples\framework\gui\nanoguimodule\nanogui\button.cpp L: 105 nanogui::Button::mouseButtonEvent
+stack dump [6]		e:\code4\g3logblock\samples\framework\gui\nanoguimodule\nanogui\widget.cpp L: 93 nanogui::Widget::mouseButtonEvent
+stack dump [7]		e:\code4\g3logblock\samples\framework\gui\nanoguimodule\nanogui\window.cpp L: 120 nanogui::Window::mouseButtonEvent
+stack dump [8]		e:\code4\g3logblock\samples\framework\gui\nanoguimodule\nanogui\widget.cpp L: 93 nanogui::Widget::mouseButtonEvent
+stack dump [9]		e:\code4\g3logblock\samples\framework\gui\nanoguimodule\nanogui\screen.cpp L: 130 nanogui::Screen::mouseButtonCallbackEvent
+stack dump [10]		e:\code4\g3logblock\samples\hellog3\src\view.cpp L: 80 View::mouseUp
+stack dump [11]		e:\code4\g3logblock\samples\hellog3\src\hellog3app.cpp L: 52 HelloG3App::mouseUp
+stack dump [12]		e:\code4\cinder\src\cinder\app\window.cpp L: 332 cinder::app::Window::emitMouseUp
+stack dump [13]		e:\code4\cinder\src\cinder\app\msw\appimplmsw.cpp L: 873 cinder::app::WndProc
+stack dump [14]	 DispatchMessageW
+stack dump [15]	 CallWindowProcW
+stack dump [16]	 glDebugEntry
+stack dump [17]	 DispatchMessageW
+stack dump [18]	 DispatchMessageW
+stack dump [19]		e:\code4\cinder\src\cinder\app\msw\appimplmswbasic.cpp L: 142 cinder::app::AppImplMswBasic::sleep
+stack dump [20]		e:\code4\cinder\src\cinder\app\msw\appimplmswbasic.cpp L: 104 cinder::app::AppImplMswBasic::run
+stack dump [21]		e:\code4\cinder\src\cinder\app\msw\appmsw.cpp L: 93 cinder::app::AppMsw::launch
+stack dump [22]		e:\code4\cinder\src\cinder\app\appbase.cpp L: 134 cinder::app::AppBase::executeLaunch
+stack dump [23]		e:\code4\cinder\include\cinder\app\msw\appmsw.h L: 109 cinder::app::AppMsw::main<HelloG3App>
+stack dump [24]		e:\code4\g3logblock\samples\hellog3\src\hellog3app.cpp L: 136 WinMain
+stack dump [25]		f:\dd\vctools\crt\crtw32\startup\crt0.c L: 251 __tmainCRTStartup
+stack dump [26]		f:\dd\vctools\crt\crtw32\startup\crt0.c L: 165 WinMainCRTStartup
+stack dump [27]	 BaseThreadInitThunk
+stack dump [28]	 RtlUserThreadStart
+
+---End of first stacktrace
+
+Exiting after fatal event  (FATAL_EXCEPTION). Fatal type:  EXCEPTION_BREAKPOINT
+Log content flushed flushed sucessfully to sink
+
+"
+g2log g2FileSink shutdown at: 19:04:25

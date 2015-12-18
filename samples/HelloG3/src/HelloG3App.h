@@ -41,14 +41,11 @@ private:
 	LogRef log;
 	StdThreadPool pool;
 	int jobNumber = 0;
-
-	double prevt = 0;
-	double cpuTime = 0;
-	bool usingGui = false;
 	bool ok = true;
-
 	Color bgColor = Color(0.1f, 0.11f, 0.12f);
 
 	static Rand rand;
 	static void task(const int jobNumber);
 };
+
+

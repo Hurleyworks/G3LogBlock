@@ -4,7 +4,6 @@
 
 #pragma once
 
-#include <cinder/Filesystem.h>
 #include "../../../g3logger/g3logger.h"
 
 typedef std::shared_ptr<class Log> LogRef;
@@ -15,7 +14,7 @@ class Log
  public:
 	 Log(const std::string & logFolder, const std::string & appName);
 	~Log ();
-		
+
  private:
 	std::string logFolder;
 	g2::DefaultFileLogger logger;
