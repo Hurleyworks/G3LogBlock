@@ -76,19 +76,18 @@ void HelloG3App::resize()
 {
 	LOG(DBUG) << getWindowSize();
 	LOG(DBUG) << getWindowCenter();
+	gui->resize(getWindowSize());
 }
 void HelloG3App::update()
 {
-	if (frameLogging)
-		LOG(DBUG) << __FUNCTION__;
+	LOG_IF(DBUG, frameLogging) << __FUNCTION__;
 }
 
 void HelloG3App::draw()
 {
 	if (!ok) return;
 
-	if (frameLogging)
-		LOG(DBUG) << __FUNCTION__;
+	LOG_IF(DBUG, frameLogging) << __FUNCTION__;
 
 	// performance data
 	double t, dt;
