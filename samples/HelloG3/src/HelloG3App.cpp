@@ -6,6 +6,8 @@ void HelloG3App::setup()
 {
 	try
 	{
+		gl::enableVerticalSync(false);
+
 		Rand::randomize();
 		gui = std::make_shared<View>();
 		gui->create(getWindow(), this);
@@ -140,7 +142,7 @@ CINDER_APP(HelloG3App, RendererGl(RendererGl::Options().stencil().msaa(16)),
 	[&](App::Settings * settings)
 {
 	settings->setWindowSize(appWidth, appHeight);
-	settings->setFrameRate(60.0f);
+	settings->disableFrameRate();
 	settings->setHighDensityDisplayEnabled();
 	settings->setTitle(getTitle());
 })
