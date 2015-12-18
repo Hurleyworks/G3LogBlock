@@ -2,21 +2,38 @@
 
 Rand HelloG3App::rand;
 
+HelloG3App::HelloG3App()
+	: pool(std::thread::hardware_concurrency())
+{
+	fs::path p = getAssetPath("logs");
+	log = std::make_shared<Log>(p.generic_string(), getTitle());
+
+	LOG(DBUG) << __FUNCTION__;
+}
+
+HelloG3App::~HelloG3App()
+{
+	LOG(DBUG) << __FUNCTION__;
+}
+
+void HelloG3App::quit()
+{
+	LOG(DBUG) << __FUNCTION__;
+}
+
 void HelloG3App::setup()
 {
 	try
 	{
+		Rand::randomize();
 		gl::enableVerticalSync(false);
 
-		Rand::randomize();
 		gui = std::make_shared<View>();
 		gui->create(getWindow(), this);
-
-		fs::path p = getAssetPath("logs");
-		log = std::make_shared<Log>(p.generic_string(), "HelloG3App");
 	}
 	catch (std::exception & e)
 	{
+		LOG(CRITICAL) << e.what();
 		gui->postWarningMessage("Fatal Error", e.what());
 		ok = false;
 		return;
@@ -33,6 +50,9 @@ void HelloG3App::mouseMove(MouseEvent event)
 void HelloG3App::mouseDown(MouseEvent event)
 {
 	LOG(DBUG) << event.getPos();
+	LOG_IF(INFO, event.isShiftDown()) << "Shift key is pressed";
+	LOG_IF(INFO, event.isAltDown()) << "Alt key is pressed";
+	LOG_IF(INFO, event.isControlDown()) << "Control key is pressed";
 
 	gui->mouseDown(event);
 }
@@ -55,6 +75,10 @@ void HelloG3App::keyDown(KeyEvent event)
 {
 	LOG(DBUG) << __FUNCTION__;
 
+	LOG_IF(INFO, event.isShiftDown()) << "Shift key is pressed";
+	LOG_IF(INFO, event.isAltDown()) << "Alt key is pressed";
+	LOG_IF(INFO, event.isControlDown()) << "Control key is pressed";
+
 	switch (event.getCode())
 	{
 		case KeyEvent::KEY_ESCAPE:
@@ -76,18 +100,20 @@ void HelloG3App::resize()
 {
 	LOG(DBUG) << getWindowSize();
 	LOG(DBUG) << getWindowCenter();
+
 	gui->resize(getWindowSize());
 }
+
 void HelloG3App::update()
 {
-	LOG_IF(DBUG, frameLogging) << __FUNCTION__;
+	LOG_IF(DBUG, perFrameLogging) << __FUNCTION__;
 }
 
 void HelloG3App::draw()
 {
 	if (!ok) return;
 
-	LOG_IF(DBUG, frameLogging) << __FUNCTION__;
+	LOG_IF(DBUG, perFrameLogging) << __FUNCTION__;
 
 	// performance data
 	double t, dt;
@@ -135,6 +161,14 @@ void HelloG3App::task(const int jobNumber)
 	std::chrono::duration<double, std::milli> elapsed = end - start;
 
 	LOG(INFO) << "Job: " << jobNumber << " took " << elapsed.count() << " ms";
+}
+
+void HelloG3App::fileDrop(FileDropEvent event)
+{
+	for (auto it : event.getFiles())
+	{
+		LOG(INFO) << it.string();
+	}
 }
 
 CINDER_APP(HelloG3App, RendererGl(RendererGl::Options().stencil().msaa(16)),

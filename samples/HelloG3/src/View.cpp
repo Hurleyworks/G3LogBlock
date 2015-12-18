@@ -14,11 +14,13 @@ View::View()
 	: nanogui::Screen()
 {
 	mTheme = new Theme(mNVGContext);
+	LOG(DBUG) << __FUNCTION__;
 }
 
 // dtor
 View::~View()
 {
+	LOG(DBUG) << __FUNCTION__;
 }
 
 void View::create(WindowRef & ciWindow, HelloG3App * const app)

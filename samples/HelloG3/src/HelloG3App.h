@@ -15,14 +15,15 @@ using namespace std;
 class HelloG3App : public App
 {
 
-public:
-	HelloG3App()
-		: pool(std::thread::hardware_concurrency())
-	{}
+ public:
+	HelloG3App();
+	~HelloG3App();
+
 	void setup() override;
 	void resize() override;
 	void update() override;
 	void draw() override;
+	void quit() override;
 
 	void mouseMove(MouseEvent event) override;
 	void mouseDown(MouseEvent event) override;
@@ -32,14 +33,16 @@ public:
 	void keyDown(KeyEvent event) override;
 	void keyUp(KeyEvent event) override;
 
+	void fileDrop(FileDropEvent event) override;
+
 	void spawnNewJobs(int count);
 	void crashByNullPointer();
 	void raiseSIGABRT();
-	void logFrames(bool state) { frameLogging = state; }
+	void logFrames(bool state) { perFrameLogging = state; }
 
-private:
-	ViewRef gui;
-	LogRef log;
+ private:
+	LogRef log = nullptr;
+	ViewRef gui = nullptr;
 	StdThreadPool pool;
 	int jobNumber = 0;
 	bool ok = true;
@@ -48,7 +51,7 @@ private:
 	// performance
 	double prevt = 0;
 	double cpuTime = 0;
-	bool frameLogging = false;
+	bool perFrameLogging = false;
 
 	static Rand rand;
 	static void task(const int jobNumber);
