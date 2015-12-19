@@ -43,6 +43,8 @@ void HelloG3App::quit()
 
 void HelloG3App::setup()
 {
+	ScopedStopWatch sw(__FUNCTION__);
+
 	try
 	{
 		Rand::randomize();

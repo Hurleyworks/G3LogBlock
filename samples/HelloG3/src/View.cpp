@@ -79,7 +79,7 @@ void View::create(WindowRef & ciWindow, HelloG3App * const app)
 	}
 	catch (const std::exception & e)
 	{
-		std::cout << e.what() << std::endl;
+		LOG(CRITICAL) << e.what();
 	}
 }
 
