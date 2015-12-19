@@ -1,14 +1,34 @@
 #include "HelloG3App.h"
+#include <cinder/System.h>
 
 Rand HelloG3App::rand;
 
 HelloG3App::HelloG3App()
-	: pool(std::thread::hardware_concurrency())
+	: pool(std::thread::hardware_concurrency()/2)
 {
 	fs::path p = getAssetPath("logs");
 	log = std::make_shared<Log>(p.generic_string(), getTitle());
 
-	LOG(DBUG) << __FUNCTION__;
+#if ! defined( CINDER_WINRT )
+#if ! defined( CINDER_MSW )
+	LOG(INFO) << " OS Version " << System::getOsMajorVersion() << "." << System::getOsMinorVersion() << "." << System::getOsBugFixVersion();
+#else
+	LOG(INFO) << " OS Version " << System::getOsMajorVersion() << "." << System::getOsMinorVersion() << " Service Pack " << System::getOsBugFixVersion();
+#endif
+	LOG_IF(INFO, System::hasSse2()) << "has SSE2";
+	LOG_IF(INFO, System::hasSse3()) << "has SSE3";
+	LOG_IF(INFO, System::hasSse4_1()) << "has SSE4.1";
+	LOG_IF(INFO, System::hasSse4_2()) << "has SSE4.2";
+	LOG_IF(INFO, System::hasX86_64()) << "has 64 bit";
+	LOG(INFO) << "CPUs: " << System::getNumCpus();
+	LOG(INFO) << "Cores: " << System::getNumCores();
+#endif	
+	LOG(INFO) << "Network Adapters: ";
+	vector<System::NetworkAdapter> adapters = System::getNetworkAdapters();
+	for (vector<System::NetworkAdapter>::const_iterator netIt = adapters.begin(); netIt != adapters.end(); ++netIt)
+		LOG(INFO) << "  " << *netIt;
+	LOG(INFO) << "IP Address: " << System::getIpAddress();
+	LOG(INFO) << "Subnet Mask: " << System::getSubnetMask();
 }
 
 HelloG3App::~HelloG3App()
@@ -44,6 +64,8 @@ void HelloG3App::setup()
 
 void HelloG3App::mouseMove(MouseEvent event)
 {
+	LOG(TESTING) << __FUNCTION__;
+
 	gui->mouseMove(event);
 }
 
@@ -106,6 +128,7 @@ void HelloG3App::resize()
 
 void HelloG3App::update()
 {
+	// framerate should not change!
 	LOG_IF(DBUG, perFrameLogging) << __FUNCTION__;
 }
 
@@ -113,6 +136,7 @@ void HelloG3App::draw()
 {
 	if (!ok) return;
 
+	// framerate should not change!
 	LOG_IF(DBUG, perFrameLogging) << __FUNCTION__;
 
 	// performance data
@@ -132,21 +156,24 @@ void HelloG3App::draw()
 
 void HelloG3App::crashByNullPointer()
 {
-	LOG(CRITICAL) << "-------------About to dereference a null pointer!!!!";
+	LOG(CRITICAL) << "--------- About to dereference a null pointer!!!!";
+
 	int * const ptr = nullptr;
 	*ptr = 42;
 }
 
 void HelloG3App::raiseSIGABRT()
 {
-	LOG(CRITICAL) << "-------------About to abort!";
+	LOG(CRITICAL) << "--------- About to abort!";
+
 	raise(SIGABRT);
 }
 
 void HelloG3App::spawnNewJobs(int count)
 {
 	// add jobs to the pool
-	LOG(INFO) << "-----------------Adding " << count << " new jobs to the thread pool";
+	LOG(INFO) << "-------------- Adding " << count << " new jobs to the thread pool";
+
 	for (int i = 0; i < count; i++)
 		pool.enqueue(&HelloG3App::task, jobNumber++);
 }

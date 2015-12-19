@@ -34,22 +34,47 @@ void View::create(WindowRef & ciWindow, HelloG3App * const app)
 		initGraph(&cpuGraph, GRAPH_RENDER_MS, "CPU Time");
 
 		nanogui::Window * window = new nanogui::Window(this, "g3logger demo");
-		window->center();
+		window->setPosition(ivec2(15, 15));
 		window->setLayout(new GroupLayout());
 
-		Button * b = new Button(window, "Spawn 12 new jobs");
-		b->setCallback([&] {this->app->spawnNewJobs(12); });
+		Button * b = new Button(window, "Multi-threading test");
+		b->setFontSize(18);
+		b->setCallback([&] {this->app->spawnNewJobs(30); });
 
-		b = new Button(window, "AccessViolation");
+		b = new Button(window, "Crash (AccessViolation)");
+		b->setFontSize(18);
 		b->setCallback([&] { this->app->crashByNullPointer(); });
 
-		b = new Button(window, "SIGABRT");
+		b = new Button(window, "Crash (SIGABRT)");
+		b->setFontSize(18);
 		b->setCallback([&] {this->app->raiseSIGABRT(); });
 
 		new Label(window, "Performance test", "sans-bold");
 		b = new Button(window, "Log draw() and update()");
+		b->setFontSize(18);
 		b->setFlags(Button::ToggleButton);
 		b->setChangeCallback([&](bool state) { this->app->logFrames(state);});
+
+		new Label(window, "Dynamic Log levels");
+		CheckBox * cb = new CheckBox(window, "Testing",
+			[](bool state){ g2::setLogLevel(TESTING, state);} );
+		cb->setChecked(false);
+
+		cb = new CheckBox(window, "Debug",
+			[](bool state){ g2::setLogLevel(DBUG, state); });
+		cb->setChecked(true);
+
+		cb = new CheckBox(window, "Info",
+			[](bool state){ g2::setLogLevel(INFO, state); });
+		cb->setChecked(true);
+
+		cb = new CheckBox(window, "Warning",
+			[](bool state){ g2::setLogLevel(WARNING, state); });
+		cb->setChecked(true);
+
+		cb = new CheckBox(window, "Critical",
+			[](bool state){ g2::setLogLevel(CRITICAL, state); });
+		cb->setChecked(true);
 
 		performLayout(mNVGContext);
 	}
