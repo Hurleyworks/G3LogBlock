@@ -55,7 +55,7 @@ void View::create(WindowRef & ciWindow, HelloG3App * const app)
 		b->setFlags(Button::ToggleButton);
 		b->setChangeCallback([&](bool state) { this->app->logFrames(state);});
 
-		new Label(window, "Dynamic Log levels");
+		new Label(window, "Dynamic Log levels", "sans-bold");
 		CheckBox * cb = new CheckBox(window, "Testing",
 			[](bool state){ g2::setLogLevel(TESTING, state);} );
 		cb->setChecked(false);
