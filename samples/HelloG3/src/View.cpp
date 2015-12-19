@@ -8,7 +8,6 @@
 using namespace nanogui;
 using namespace ci;
 
-
 // ctor
 View::View()
 	: nanogui::Screen()
