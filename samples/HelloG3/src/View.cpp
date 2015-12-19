@@ -40,6 +40,10 @@ void View::create(WindowRef & ciWindow, HelloG3App * const app)
 		b->setFontSize(18);
 		b->setCallback([&] {this->app->spawnNewJobs(30); });
 
+		b = new Button(window, "Crash on worker thread");
+		b->setFontSize(18);
+		b->setCallback([&] {this->app->spawnNewJobs(20, 10); });
+
 		b = new Button(window, "Crash (AccessViolation)");
 		b->setFontSize(18);
 		b->setCallback([&] { this->app->crashByNullPointer(); });

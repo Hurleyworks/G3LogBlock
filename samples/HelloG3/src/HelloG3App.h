@@ -35,7 +35,7 @@ class HelloG3App : public App
 
 	void fileDrop(FileDropEvent event) override;
 
-	void spawnNewJobs(int count);
+	void spawnNewJobs(int count, int crashJob = CRASH_JOB);
 	void crashByNullPointer();
 	void raiseSIGABRT();
 	void logFrames(bool state) { perFrameLogging = state; }

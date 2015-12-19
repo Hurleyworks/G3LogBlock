@@ -171,13 +171,22 @@ void HelloG3App::raiseSIGABRT()
 	raise(SIGABRT);
 }
 
-void HelloG3App::spawnNewJobs(int count)
+void HelloG3App::spawnNewJobs(int count, int crashJob)
 {
 	// add jobs to the pool
 	LOG(INFO) << "-------------- Adding " << count << " new jobs to the thread pool";
 
 	for (int i = 0; i < count; i++)
-		pool.enqueue(&HelloG3App::task, jobNumber++);
+	{
+		if (i == crashJob)
+		{
+			pool.enqueue(&HelloG3App::task, CRASH_JOB);
+		}
+		else
+		{
+			pool.enqueue(&HelloG3App::task, jobNumber++);
+		}
+	}
 }
 
 void HelloG3App::task(const int jobNumber)
@@ -190,6 +199,9 @@ void HelloG3App::task(const int jobNumber)
 	std::chrono::duration<double, std::milli> elapsed = end - start;
 
 	LOG(INFO) << "Job: " << jobNumber << " took " << elapsed.count() << " ms";
+
+	if (jobNumber == CRASH_JOB)
+		raise(SIGTERM);
 }
 
 void HelloG3App::fileDrop(FileDropEvent event)

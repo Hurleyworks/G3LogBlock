@@ -6,6 +6,7 @@
 const std::string appName = "HelloG3";
 const float appHeight = 600.0f;
 const float appWidth = 1.618f * appHeight;
+const int CRASH_JOB = -1;
 
 #define APP_MAJOR_VERSION      0
 #define APP_MINOR_VERSION      8
