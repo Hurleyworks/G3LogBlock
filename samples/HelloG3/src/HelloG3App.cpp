@@ -66,6 +66,7 @@ void HelloG3App::setup()
 
 void HelloG3App::mouseMove(MouseEvent event)
 {
+	// TESTING level is disabled by default
 	LOG(TESTING) << __FUNCTION__;
 
 	gui->mouseMove(event);
@@ -201,7 +202,11 @@ void HelloG3App::task(const int jobNumber)
 	LOG(INFO) << "Job: " << jobNumber << " took " << elapsed.count() << " ms";
 
 	if (jobNumber == CRASH_JOB)
+	{
+		LOG(CRITICAL) << "This thread is crashing the app!";
 		raise(SIGTERM);
+	}
+		
 }
 
 void HelloG3App::fileDrop(FileDropEvent event)
